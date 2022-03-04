@@ -1,0 +1,196 @@
+<div id="MyWidget_${instanceId}" class="super-widget wcm-widget-class fluig-style-guide" data-params="MyWidget.instance()">
+    <script type="text/javascript" src="/fluighub/assets/js/fluighub.js"></script>
+    <script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>  
+
+    <div id='comercial' class="nav-close">
+
+        <h2 style="color: #e5883f;">Cadastro Comercial</h2>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20cliente%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Cliente/Patrocinador</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="c1()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20produto%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Produtos e Serviços</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="c2()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20or%C3%A7amento%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Orçamento</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="c3()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h2 style="color: #e5883f;">Cronograma Técnico</h2>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20cronograma%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Cronograma de Estudo</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="c4()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id='amostra' class="nav-close">
+
+        <h2 style="color: #e5883f;">Cadastro e Movimentação de Amostra</h2>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20amostra%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Cadastro de Amostra</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="a1()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20movi.amt%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Movimentação de Amostra</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="a2()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id='financeiro' class="nav-close">
+
+        <h2 style="color: #e5883f;">Financeiro</h2>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20compras%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Solicitação de Compras</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="f1()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20fornecedor%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Cadastro de Fornecedor</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="f2()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id='recrutamento' class="nav-close">
+
+        <h2 style="color: #e5883f;">Recrutamento</h2>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20participantes%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Cadastro de Participantes</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="r1()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20relatorio%20partc.%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Relatório de Participantes</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="r2()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id='suporte' class="nav-close">
+
+        <h2 style="color: #e5883f;">Suporte</h2>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 100%">
+                    <img src="https://github.com/Emanuel-developer992/imagens/blob/main/Medcin/card%20suporte%202.0.png?raw=true" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-title" style="font-weight: bold; color: #e5883f;">Suporte TI</p>
+                        <div style="margin-bottom: 0%;">
+                            <button class="btn button-medcin" style="height: 35%;" onclick="s1()"><i class="flaticon flaticon-send icon-xs" style="color: white;"></i> Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+     
+    <!--orion-->
+</div>
